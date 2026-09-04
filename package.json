@@ -1,0 +1,29 @@
+{
+  "name": "sih-2026-isro-dead-reckoning",
+  "version": "2.0.0",
+  "description": "ISRO Dead Reckoning Navigation System - AI-powered GNSS-denied navigation",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "cd frontend && npm test"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "keywords": [
+    "dead-reckoning",
+    "isro",
+    "gnss-denied",
+    "navigation",
+    "imu",
+    "ekf",
+    "machine-learning"
+  ],
+  "author": "SIH 2026 Team",
+  "license": "MIT"
+}

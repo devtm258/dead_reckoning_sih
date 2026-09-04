@@ -1,0 +1,46 @@
+# Vercel build ignore - these files won't be uploaded for deployment
+
+# Backend (runs separately)
+backend/
+server.py
+requirements.txt
+Dockerfile
+fly.toml
+railway.json
+
+# Data files
+data/
+*.csv
+sample_data/
+
+# Testing
+test_reports/
+tests/
+pytest.ini
+
+# Development
+.git
+.github
+.emergent
+.env
+.env.local
+*.pem
+*.key
+
+# Documentation
+*.md
+!README.md
+
+# IDE
+.vscode
+.idea
+*.swp
+.DS_Store
+
+# Dependencies (already in node_modules)
+npm-debug.log
+yarn-error.log
+
+# CI/CD
+.gitignore
+.gitattributes
