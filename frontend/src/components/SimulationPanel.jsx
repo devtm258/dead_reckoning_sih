@@ -14,9 +14,9 @@ export default function SimulationPanel({ session, canRun, onResult }) {
   const [range, setRange] = useState([Math.round(0.3 * maxT), Math.round(0.7 * maxT)]);
 
   useEffect(() => {
-    const m = session?.duration_s || 100;
-    setRange([Math.round(0.3 * m), Math.round(0.7 * m)]);
-  }, [session?.session_id]);
+  const m = session?.duration_s || 100;
+  setRange([Math.round(0.3 * m), Math.round(0.7 * m)]);
+}, [session]);
 
   const doRun = async () => {
     if (!canRun) return toast.error("Train the ML model first");
