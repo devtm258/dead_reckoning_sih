@@ -1,16 +1,5 @@
-{
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/build",
-  "env": [
-    "REACT_APP_API_URL",
-    "REACT_APP_ENVIRONMENT"
-  ],
-  "envPrefix": "REACT_APP_",
-  "regions": ["iad1"],
-  "git": {
-    "deploymentEnabled": {
-      "main": true,
-      "develop": true
-    }
-  }
-}
+   {
+     "buildCommand": "cd frontend && npm run build",
+     "outputDirectory": "frontend/build",
+     "regions": ["iad1"]
+   }
